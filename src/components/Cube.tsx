@@ -1,6 +1,6 @@
-import { useFrame } from "@react-three/fiber";
-import { useRef } from "react";
-import * as three from "three";
+import { useFrame } from '@react-three/fiber';
+import { useRef } from 'react';
+import * as three from 'three';
 
 const Cube = () => {
   const cube = useRef<three.Mesh>();
@@ -11,6 +11,7 @@ const Cube = () => {
   });
 
   return (
+    // @ts-ignore
     <mesh ref={cube}>
       <boxBufferGeometry args={[1, 1, 1]} />
       <meshBasicMaterial color="#0391BA" />
